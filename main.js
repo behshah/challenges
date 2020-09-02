@@ -1,3 +1,4 @@
+// first change is main.js.why vs is so slow
 const form = document.querySelector('#addForm');
 
 form.addEventListener('submit', function(e){
