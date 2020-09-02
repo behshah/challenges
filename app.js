@@ -1,4 +1,5 @@
-// // toFixed : return a strig ,with a number written with the specified number of decimals.
+// clone in git test
+// toFixed : return a strig ,with a number written with the specified number of decimals.
 // var a = 9.656;
 // var x = a.toFixed() ;
 // var y = a.toFixed(2) ;
