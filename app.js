@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 // clone in git test
 // toFixed : return a strig ,with a number written with the specified number of decimals.
+=======
+// modifing app.js in clone 
+//  toFixed : return a strig ,with a number written with the specified number of decimals.
+>>>>>>> b2cb26ae96f77328c93e83ad1e8dfb0db73e5c8c
 // var a = 9.656;
 // var x = a.toFixed() ;
 // var y = a.toFixed(2) ;

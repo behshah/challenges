@@ -1,4 +1,4 @@
-// first change is main.js.why vs is so slow
+// first change is main.js.why vs is so slow damn vs shame on you.
 const form = document.querySelector('#addForm');
 
 form.addEventListener('submit', function(e){
@@ -10,7 +10,9 @@ form.addEventListener('submit', function(e){
 //  var x = Number(a);
 
  var cars = ["volvo", "pride", "mitsubishi","cadilac"];
-    cars.push("suzuki");
+//  cars[cars.length] = "honda";
+    cars[7] = "honda";
+//     cars.push("suzuki");
     // var  text = "<ul>";
     // cars.forEach(myFunction);
     // text += "</ul>";
@@ -18,6 +20,12 @@ form.addEventListener('submit', function(e){
     //     text += "<li>"+ value + "</li>"
     // }
 
+    // var cars = [ "volvo" , "fiat" , "honds" , "sab"]
+    // var i ;
+
+    // for (var i = 0; i < cars.length; i++){
+    //        cars[i];   
+    // }
     // const textForm = document.querySelector('#item').value;
     //const useMethod = textForm;
     // const useMethod = Number(textForm); 
@@ -39,10 +47,10 @@ form.addEventListener('submit', function(e){
     var li = document.createElement(li);
 
     li.className = "list-group-item";
-    li.appendChild(document.createTextNode(cars));
+    li.appendChild(document.createTextNode(cars instanceof Array));
     ulItems.appendChild(li);
     console.log(typeof(cars))
-    console.log(cars);
+    console.log(cars instanceof Array);
 
     
 
