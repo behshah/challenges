@@ -4,15 +4,25 @@ const form = document.querySelector('#addForm');
 form.addEventListener('submit', function(e){
     e.preventDefault();
 //  var a = "jhon";;
-//var cars = ("pride", "sab" , "honda", "merci","wv");
+//  var cars = ("pride", "sab" , "honda", "merci","wv");
 // cars[3] = "topol"
 // var person = {firstName:"John", lastName:"Doe", age:46};
 //  var x = Number(a);
 
- var cars = ["volvo", "pride", "mitsubishi","cadilac"];
-//  cars[cars.length] = "honda";
-    cars[7] = "honda";
-//     cars.push("suzuki");
+ var cars = ["volvo", "pride", "mitsubishi","cadilac","jeep","razavi","datson"];
+    
+//  var cars = cars1.slice(1,4);
+//  var SecondCar= ["volvo", "pride", "mitsubishi","cadilac"];
+//  var thirdCar= ["hamer","volvo", "pride", "mitsubishi","cadilac"];
+//  var cars = firstCar.concat(SecondCar,thirdCar,"hemmer");
+//  cars[0]= "tesla";
+    // cars[cars.length] = "tesla";
+    // delete cars[1];
+//  cars.splice(3,3);
+// car.pop();
+    //cars[cars.length] = "honda";
+    //cars[7] = "honda";
+    //     cars.push("suzuki");
     // var  text = "<ul>";
     // cars.forEach(myFunction);
     // text += "</ul>";
@@ -42,16 +52,17 @@ form.addEventListener('submit', function(e){
     
 
 
-    const ulItems = document.querySelector('#items');
-    // var newLi = document.createElement(li);
-    var li = document.createElement(li);
+    // const ulItems = document.querySelector('#items');
+    // // var newLi = document.createElement(li);
+    // var li = document.createElement(li);
 
-    li.className = "list-group-item";
-    li.appendChild(document.createTextNode(cars instanceof Array));
-    ulItems.appendChild(li);
-    console.log(typeof(cars))
-    console.log(cars instanceof Array);
-
+    // li.className = "list-group-item";
+    // li.appendChild(document.createTextNode(cars));
+    // ulItems.appendChild(li);
+    // console.log(Array.isArray(cars))
+    var h2 = document.querySelector('.title').innerHTML = cars;
+    console.log(cars);
+  
     
 
 
