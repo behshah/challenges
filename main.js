@@ -3,23 +3,16 @@ const form = document.querySelector('#addForm');
 
 form.addEventListener('submit', function(e){
     e.preventDefault();
-//  var a = "jhon";;
-//  var cars = ("pride", "sab" , "honda", "merci","wv");
-// cars[3] = "topol"
-// var person = {firstName:"John", lastName:"Doe", age:46};
-//  var x = Number(a);
-
- var cars = ["volvo", "pride", "mitsubishi","cadilac","jeep","razavi","datson"];
     
-//  var cars = cars1.slice(1,4);
-//  var SecondCar= ["volvo", "pride", "mitsubishi","cadilac"];
-//  var thirdCar= ["hamer","volvo", "pride", "mitsubishi","cadilac"];
-//  var cars = firstCar.concat(SecondCar,thirdCar,"hemmer");
-//  cars[0]= "tesla";
+    //  var cars = cars1.slice(1,4);
+    //  var SecondCar= ["volvo", "pride", "mitsubishi","cadilac"];
+    //  var thirdCar= ["hamer","volvo", "pride", "mitsubishi","cadilac"];
+    //  var cars = firstCar.concat(SecondCar,thirdCar,"hemmer");
+    //  cars[0]= "tesla";
     // cars[cars.length] = "tesla";
     // delete cars[1];
-//  cars.splice(3,3);
-// car.pop();
+    //  cars.splice(3,3);
+    // car.pop();
     //cars[cars.length] = "honda";
     //cars[7] = "honda";
     //     cars.push("suzuki");
@@ -29,14 +22,14 @@ form.addEventListener('submit', function(e){
     // function myFunction (value){
     //     text += "<li>"+ value + "</li>"
     // }
-
+    
     // var cars = [ "volvo" , "fiat" , "honds" , "sab"]
     // var i ;
 
     // for (var i = 0; i < cars.length; i++){
-    //        cars[i];   
-    // }
-    // const textForm = document.querySelector('#item').value;
+        //        cars[i];   
+        // }
+        // const textForm = document.querySelector('#item').value;
     //const useMethod = textForm;
     // const useMethod = Number(textForm); 
     // const useMethod = parseInt(textForm); 
@@ -50,20 +43,55 @@ form.addEventListener('submit', function(e){
     //      useMethod = Number.NaN; 
     //const useMethod = textForm.valueOf()
     
+    //  var a = "jhon";;
+    //  var cars = ("pride", "sab" , "honda", "merci","wv");
+    // cars[3] = "topol"
+    // var person = {firstName:"John", lastName:"Doe", age:46};
+    //  var x = Number(a);
+    
+    //  var cars = ["volvo", "pride", "mitsubishi","cadilac","jeep","razavi","datson"];
+//    var points = [40, 100 , 1 , 2 , 25 , 10];
+   var cars = [
+       {type:"jeep", year:2001},
+       {type:"NEC" , year:2020},
+       {type:"hone", year:2016}
+   ]
+   //cars.sort(function (a,b) {return a.year-b.year});
+   cars.sort(function(a, b){
+    var x = a.type.toLowerCase();
+    var y = b.type.toLowerCase();
+    if (x < y) {return -1;}
+    if (x > y) {return 1;}
+    return 0;
+  });
+ 
 
-
-    // const ulItems = document.querySelector('#items');
-    // // var newLi = document.createElement(li);
-    // var li = document.createElement(li);
-
-    // li.className = "list-group-item";
-    // li.appendChild(document.createTextNode(cars));
-    // ulItems.appendChild(li);
-    // console.log(Array.isArray(cars))
-    var h2 = document.querySelector('.title').innerHTML = cars;
+//         points.sort(function(a,b){return b-a});
+        // function myArrayMax(arr){
+        //     var len = arr.length;
+        //     var max = -Infinity;
+        //     while (len--){
+        //         if (arr[len] > max){
+        //             max = arr[len];
+        //         }
+        //     }
+        //     return max;
+        // }
+//    for (i = points.length -1;      i > 0;       i--) {
+//     j = Math.floor(Math.random() * i)
+//     k = points[i]
+//     points[i] = points[j]
+//     points[j] = k
+//   }
+   
+    
+    const ulItems = document.querySelector('#items');
+    var li = document.createElement(li);
+    li.className = "list-group-item";
+    li.appendChild(document.createTextNode(cars));
+    ulItems.appendChild(li);
+    console.log(Array.isArray(cars))
     console.log(cars);
   
     
-
-
-})
+});
