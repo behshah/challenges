@@ -50,20 +50,20 @@ form.addEventListener('submit', function(e){
     //  var x = Number(a);
     
     //  var cars = ["volvo", "pride", "mitsubishi","cadilac","jeep","razavi","datson"];
-//    var points = [40, 100 , 1 , 2 , 25 , 10];
-   var cars = [
-       {type:"jeep", year:2001},
-       {type:"NEC" , year:2020},
-       {type:"hone", year:2016}
-   ]
-   //cars.sort(function (a,b) {return a.year-b.year});
-   cars.sort(function(a, b){
-    var x = a.type.toLowerCase();
-    var y = b.type.toLowerCase();
-    if (x < y) {return -1;}
-    if (x > y) {return 1;}
-    return 0;
-  });
+// //    var points = [40, 100 , 1 , 2 , 25 , 10];
+//    var cars = [
+//        {type:"jeep", year:2001},
+//        {type:"NEC" , year:2020},
+//        {type:"hone", year:2016}
+//    ]
+//    //cars.sort(function (a,b) {return a.year-b.year});
+//    cars.sort(function(a, b){
+//     var x = a.type.toLowerCase();
+//     var y = b.type.toLowerCase();
+//     if (x < y) {return -1;}
+//     if (x > y) {return 1;}
+//     return 0;
+//   });
  
 
 //         points.sort(function(a,b){return b-a});
@@ -83,15 +83,31 @@ form.addEventListener('submit', function(e){
 //     points[i] = points[j]
 //     points[j] = k
 //   }
-   
-    
-    const ulItems = document.querySelector('#items');
+
+
+    // var txt = "";
+    // numbers.forEach(myFunction);
+    // function myFunction(value){
+    //     txt = txt + value + "<br>";
+    // };
+
+    // var fruits = ["Apple","Orange ","Apple","Mango"]
+    var numbers = [4,9,16,24,28]
+    var over18 =  numbers.findIndex(myFunction);
+
+        function myFunction(value,index,array){
+            return value>18
+        }
+
+
+        const ulItems = document.querySelector('#items') ;
+        ulItems.value = numbers;
     var li = document.createElement(li);
     li.className = "list-group-item";
-    li.appendChild(document.createTextNode(cars));
+    li.appendChild(document.createTextNode(over18));
     ulItems.appendChild(li);
-    console.log(Array.isArray(cars))
-    console.log(cars);
+    console.log(Array.isArray(numbers))
+    console.log(over18);
   
     
 });
