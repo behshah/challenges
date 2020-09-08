@@ -92,22 +92,24 @@ form.addEventListener('submit', function(e){
     // };
 
     // var fruits = ["Apple","Orange ","Apple","Mango"]
-    var numbers = [4,9,16,24,28]
-    var over18 =  numbers.findIndex(myFunction);
+    // var numbers = [4,9,16,24,28]
+    // var over18 =  numbers.findIndex(myFunction);
 
-        function myFunction(value,index,array){
-            return value>18
-        }
+    //     function myFunction(value,index,array){
+    //         return value>18
+    //     }
 
+    var date = new Date();
+    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+     date =months[date.getMonth()];
 
         const ulItems = document.querySelector('#items') ;
-        ulItems.value = numbers;
+        ulItems.value = date ;
     var li = document.createElement(li);
     li.className = "list-group-item";
-    li.appendChild(document.createTextNode(over18));
+    li.appendChild(document.createTextNode(date));
     ulItems.appendChild(li);
-    console.log(Array.isArray(numbers))
-    console.log(over18);
+    console.log(Array.isArray(date))
+    console.log(date);
   
-    
-});
+   });
