@@ -19,6 +19,13 @@ function clickSubmit(e){
         math = Math.floor(item);
         math = Math.min(numbers);
         math = Math.max(numbers);
+        math = Math.floor(Math.random()*10)
+       
+        // function math (min, max) {
+        //     return Math.floor(Math.random() * (max - min)) + min;
+        // }
+        
+
 
     const items = document.querySelector('#items');
     var li = document.createElement(li);
