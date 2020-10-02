@@ -24,14 +24,61 @@
 //the innerHTML peroperty is useful to get or replace the content of HTMl Elemnts.
 // innerHTML property can be used to get or change any HTML element including <html> and <body>.
 
+//Changing the HTML output streem
+// in js we can use document.write() to write directly to the html output streem.
+//document.write(Date());
+// Never use the document.write() after the document is loaded ,it will overwite the document.
 var form = document.querySelector('#addForm');
 form.addEventListener('submit',clickSubmit);
 function clickSubmit(e){
 e.preventDefault();
 
+
+//changing the HTML CONTENT
+// the easiest way to MODIFY the conten of an HTML element is by using inner.HTML property.
+
+// changing the HTML ATTRIBUTE
+// to chanhe the value of an HTML ATTRIBUTE using bellow syntax:
 let title = document.querySelector('.title');
 title.innerHTML = " i am changed";
+//document.getElemetById('  ').attribute = new value
+// Example
+// document.getElementById('').src ="behnam.jpg"
 
+// changing HTML STYLE (css)
+// To change the style of an HTML element use the belloe syntax:
+// document.getElementById(' ').style.property = "new style";
+var animate = document.querySelector('#animate');
+// animate.style.backgroundColor = "white";
+
+// js ANIMATION Code
+// js animations are done bye programming gradual changes in an element's style.
+// The changes are called by a timer.when the timer interval is small,the animation looks continous.
+// The basic code is 
+
+// var id = setInterval(frame,5);
+
+// function frame (){
+//     if(/* test for finished */) {
+//         clearInterval(id);
+//     }else{
+//         /* code to change the element style */
+//     }
+// }
+
+// var animation = setInterval(frame , 1);
+// var pos = 0;
+// function frame(){
+//     if (pos == 350 ){
+//         clearInterval(animation);
+//     }else{
+//         pos++;
+//         animate.style.top = pos + "px";
+//         animate.style.left = pos + "px"
+//         animate.style.backgroundColor = "blue";
+
+//     }
+// }
 var item = document.querySelector('#item').value;
 
 const items = document.querySelector('#items');
